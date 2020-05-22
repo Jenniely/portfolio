@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:wght@300;400&display=swap');
-
-$text-color: #000103;
-$gradient1: #FFC804;
-$gradient2: #DD4F4F;
-$base-font: 'Roboto', sans-serif;
-$accent-font: 'Poiret One', cursive;
-
-
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:wght@300;400&display=swap");
 /* Box sizing rules */
 *,
 *::before,
@@ -44,8 +36,8 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  color: $text-color;
-  font-family: $base-font;
+  color: #000103;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -87,12 +79,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
 .wrapper {
   display: grid;
   grid-template-rows: 5vh 5vh 1fr 1fr 1fr 1fr;
   grid-template-columns: 5vh 1fr 1fr 1fr;
-
 }
 
 .menu-container {
@@ -113,13 +103,13 @@ select {
   padding: 0 32px;
   text-align: center;
   text-decoration: none;
-  color: $text-color;
-  font-family: $accent-font;
+  color: #000103;
+  font-family: "Poiret One", cursive;
   font-size: 24px;
 }
 
 .menu-item a:hover {
-  color: $gradient1;
+  color: #FFC804;
 }
 
 .self-image {
@@ -140,17 +130,17 @@ select {
 .self-promo {
   grid-row: 2/4;
   grid-column: 1/3;
-  padding-left: 4%;;
+  padding-left: 4%;
 }
 
 .name {
-  font-family: $accent-font;
+  font-family: "Poiret One", cursive;
   font-size: 56px;
   line-height: 1.2;
 }
 
 .motto {
-  font-family: $base-font;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 300;
 }
@@ -169,3 +159,5 @@ select {
   grid-row: 6/7;
   grid-column: 2/5;
 }
+
+/*# sourceMappingURL=styles.css.map */
