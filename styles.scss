@@ -90,7 +90,7 @@ select {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 5vh 5vh 40vh 1fr 1fr 1fr;
+  grid-template-rows: 5vh 5vh 40vh 50vh 1fr 1fr;
   grid-template-columns: 5vh 1fr 1fr 1fr;
 }
 
@@ -162,6 +162,7 @@ select {
   grid-column: 2/5;
   display: grid;
   grid-template-rows: 10% 20% 30vh 15%;
+  position: relative;
 }
 
 .skills-grid {
@@ -170,6 +171,7 @@ select {
   background-position: bottom left 35%;
   width: 100%;
   grid-row: 3/4;
+  position:relative;
 }
 
 .header-text {
@@ -180,7 +182,51 @@ select {
   grid-row: 2/2;
 }
 
+.portfolio-container {
+  grid-row: 5/6;
+  grid-column: 2/5;
+}
+
+.contact-container {
+  grid-row: 6/7;
+  grid-column: 2/5;
+}
+
+.skills-bars {
+  height: 100%;
+  position:absolute;
+  bottom:0px;
+  left: 35vw; 
+}
+
+.bar {
+  width: 50px;
+  height: 100%;
+  background: linear-gradient($gradient1, $gradient2);
+  display: inline-block;
+  margin: 0 5vw 0 0;
+}
+
+.quite-good {
+  height: 67%;
+}
+
+.can-do {
+  height: 45%;
+}
+
+.touched {
+  height: 23%;
+}
+
+.hidden {
+  opacity: 0;
+  width: 1px;
+}
+
 .skills-legend {
+  position:absolute;
+  left: 34vw; 
   grid-row: 4/5;
 }
 
@@ -190,15 +236,7 @@ select {
 
 .skills-item {
   float: left;
-}
-
-
-.portfolio-container {
-  grid-row: 5/6;
-  grid-column: 2/5;
-}
-
-.contact-container {
-  grid-row: 6/7;
-  grid-column: 2/5;
+  width: 5vw;
+  margin-right: 4vw;
+  text-align: center;
 }
