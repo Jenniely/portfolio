@@ -5,6 +5,7 @@ $gradient1: #FFC804;
 $gradient2: #DD4F4F;
 $base-font: 'Roboto', sans-serif;
 $accent-font: 'Poiret One', cursive;
+$max-width-dt: 1440px;
 
 
 /* Box sizing rules */
@@ -89,11 +90,11 @@ select {
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: $max-width-dt;
   padding: 0 auto;
   display: grid;
   grid-template-rows: 5vh 5vh 40vh 50vh 45vh 20vh;
-  grid-template-columns: 5vh 1fr 1fr 1fr;
+  grid-template-columns: 3vw 1fr 1fr 1fr;
 }
 
 .menu-container {
@@ -195,7 +196,7 @@ select {
   height: 0%;
   background: linear-gradient($gradient1, $gradient2);
   display: inline-block;
-  margin: 0 5vw 0 0;
+  margin: 0 5% 0 0;
 }
 
 .quite-good {
@@ -235,17 +236,20 @@ select {
   position:absolute;
   left: 34vw; 
   grid-row: 4/5;
+  width: 45%;
 }
 
 .skills-list {
   list-style-type: none;
+  text-align:justify;
 }
 
 .skills-item {
-  float: left;
-  width: 5vw;
-  margin-right: 4vw;
+  display:inline-block;
+  width: 15%;
+  margin-right: 0 auto;
   text-align: center;
+  font-size: 0.9em;
 }
 
 @keyframes grow-qg {
@@ -302,6 +306,7 @@ select {
       height: 280px;
       width: 420px;
       padding: 2vh;
+      margin: 0 auto;
       object-fit: cover;
     }
     
@@ -337,7 +342,12 @@ select {
     font-family: $base-font;
     font-size: 24px;
     text-align: center;
-    margin-top: 2vh;;
+    margin-top: 2vh;
+
+    & a {
+      text-decoration: none;
+      color: $text-color;
+    }
   }
 
   .contact-icon {
