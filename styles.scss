@@ -91,15 +91,16 @@ select {
 
 .wrapper {
   max-width: $max-width-dt;
-  padding: 0 auto;
+  margin: 0 auto;
   display: grid;
-  grid-template-rows: 5vh 5vh 40vh 50vh 45vh 20vh;
-  grid-template-columns: 3vw 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 400px 500px 500px 200px;
+  grid-template-columns: 12vw 1fr 1fr 1fr;
+  position: relative;
 }
 
 .menu-container {
   grid-row: 2/3;
-  grid-column: 2/4;
+  grid-column: 2/5;
 }
 
 .menu-list {
@@ -112,12 +113,12 @@ select {
 
 .menu-item a {
   display: block;
-  padding: 0 32px;
+  padding: 0 25px;
   text-align: center;
   text-decoration: none;
   color: $text-color;
   font-family: $accent-font;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .menu-item a:hover {
@@ -125,8 +126,8 @@ select {
 }
 
 .self-image {
-  position: relative;
-  left: 60vw;
+  position: absolute;
+  left: 65%;
   top: 2vh;
 }
 
@@ -142,19 +143,18 @@ select {
 .self-promo {
   grid-row: 2/2;
   grid-column: 1/3;
-  padding-left: 4%;
 }
 
 .name {
   font-family: $accent-font;
-  font-size: 56px;
+  font-size: 3.5rem;
   line-height: 1.2;
   margin-top: 3%;
 }
 
 .motto {
   font-family: $base-font;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.2;
   margin-top: 3%;
@@ -164,25 +164,25 @@ select {
   grid-row: 4/5;
   grid-column: 2/5;
   display: grid;
-  grid-template-rows: 10% 20% 30vh 15%;
+  grid-template-rows: 10% 20% 30vh auto;
   position: relative;
 }
 
 .skills-grid {
   background-image: url(./assets/Component3.svg);
   background-repeat: no-repeat;
-  background-position: bottom left 35%;
+  background-position: bottom left;
+  background-size: cover;
   width: 100%;
   grid-row: 3/4;
   display: grid;
-  grid-template-columns: 35vw auto;
+  grid-template-columns: 45% auto;
 }
 
 .header-text {
   font-family: $accent-font;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 1;
-  padding-left: 3%;
   grid-row: 2/2;
 }
 
@@ -234,7 +234,7 @@ select {
 
 .skills-legend {
   position:absolute;
-  left: 34vw; 
+  left: 44%; 
   grid-row: 4/5;
   width: 45%;
 }
@@ -247,9 +247,9 @@ select {
 .skills-item {
   display:inline-block;
   width: 15%;
-  margin-right: 0 auto;
+  margin: 0 auto;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 @keyframes grow-qg {
@@ -258,7 +258,7 @@ select {
   }
 
   to {
-    height: 71%;
+    height: 75%;
   }
 }
 
@@ -268,7 +268,7 @@ select {
   }
 
   to {
-    height: 47%;
+    height: 50%;
   }
 }
 
@@ -278,7 +278,7 @@ select {
   }
 
   to {
-    height: 24%;
+    height: 25%;
   }
 }
 
@@ -287,7 +287,7 @@ select {
   grid-column: 2/5;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 5vh 20vh 20vh;
+  grid-template-rows: 8vh 20vh 20vh;
 
   & span {
     grid-row: 1/2;
@@ -314,7 +314,7 @@ select {
 
   .portfolio-item-header {
     font-family: $base-font;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
   }
 
@@ -340,7 +340,7 @@ select {
 
   .contact-info {
     font-family: $base-font;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     margin-top: 2vh;
 
@@ -348,10 +348,43 @@ select {
       text-decoration: none;
       color: $text-color;
     }
+
+    & a:hover {
+      color: $gradient1;
+    }
   }
 
   .contact-icon {
-    height: 1em;;
+    height: 1em;
     display: inline;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    max-width: 900px;
+  }
+
+  .self-image {
+    left: 55%;
+  }
+
+  .self-image svg {
+    transform: scale(0.7);
+  }
+  
+  .bar {
+    width: 40px;
+    margin: 0 3% 0 0;
+  }
+
+  .skills-item {
+    transform: rotate(45deg);
+    margin-top: 5%;
+    text-align: left;
   }
 }
