@@ -1,23 +1,19 @@
-
-<svg version="1.1"
-    width="100vh" height="100vh" viewBox="0 0 1000 1000"
-    baseProfile="full"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink">
-      <defs>
-        <radialGradient id="radial"
-           fx="5%" fy="25%" r="95%"
-           spreadMethod="pad">
-          <stop offset="0%"   stop-color="#DD4F4F" stop-opacity="1"/>
-          <stop offset="100%" stop-color="#FFC804" stop-opacity="1" />
-        </radialGradient>
-    </defs>
-     <g transform="translate(15,15)">
-       <clipPath id="star">
-          <path d="M227.942 9.29102L321.719 147.153L322.767 148.695L324.614 148.97L481.302 172.368L389.507 311.901L388.563 313.337L388.849 315.022L417.594 483.845L267.367 431.699L265.498 431.05L263.777 432.054L125.379 512.766L123.819 341.252L123.803 339.541L122.622 338.316L7.79793 219.231L157.618 165.498L159.384 164.865L160.142 163.144L227.942 9.29102Z"/>
-       </clipPath>
-       <path d="M227.942 9.29102L321.719 147.153L322.767 148.695L324.614 148.97L481.302 172.368L389.507 311.901L388.563 313.337L388.849 315.022L417.594 483.845L267.367 431.699L265.498 431.05L263.777 432.054L125.379 512.766L123.819 341.252L123.803 339.541L122.622 338.316L7.79793 219.231L157.618 165.498L159.384 164.865L160.142 163.144L227.942 9.29102Z" stroke="url(#radial)" stroke-width="20"/>
-      <image xlink:href="./my-photo.png" clip-path="url(#star)" />
-    </g> 
-    
-</svg>
+            <svg version="1.1" width="600px" height="600px" viewBox="0 0 600 600" baseProfile="full"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <radialGradient id="radial" fx="5%" fy="25%" r="95%" spreadMethod="pad">
+                        <stop offset="0%" stop-color="#DD4F4F" stop-opacity="1" />
+                        <stop offset="100%" stop-color="#FFC804" stop-opacity="1" />
+                    </radialGradient>
+                </defs>
+                <g transform="translate(15,15)">
+                    <clipPath id="star">
+                        <path
+                            d="M227.942 9.29102L321.719 147.153L322.767 148.695L324.614 148.97L481.302 172.368L389.507 311.901L388.563 313.337L388.849 315.022L417.594 483.845L267.367 431.699L265.498 431.05L263.777 432.054L125.379 512.766L123.819 341.252L123.803 339.541L122.622 338.316L7.79793 219.231L157.618 165.498L159.384 164.865L160.142 163.144L227.942 9.29102Z" />
+                    </clipPath>
+                    <path
+                        d="M227.942 9.29102L321.719 147.153L322.767 148.695L324.614 148.97L481.302 172.368L389.507 311.901L388.563 313.337L388.849 315.022L417.594 483.845L267.367 431.699L265.498 431.05L263.777 432.054L125.379 512.766L123.819 341.252L123.803 339.541L122.622 338.316L7.79793 219.231L157.618 165.498L159.384 164.865L160.142 163.144L227.942 9.29102Z"
+                        stroke="url(#radial)" stroke-width="20" />
+                    <image xlink:href="./assets/my-photo.png" clip-path="url(#star)" />
+                </g>
+            </svg>

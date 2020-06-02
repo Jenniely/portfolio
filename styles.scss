@@ -376,15 +376,59 @@ select {
   .self-image svg {
     transform: scale(0.7);
   }
-  
-  .bar {
-    width: 40px;
-    margin: 0 3% 0 0;
+  .skills-grid {
+    grid-template-columns: 25% auto;
+  }
+
+  .skills-legend {
+    left: 25%;
+    width: 75%;
   }
 
   .skills-item {
     transform: rotate(45deg);
     margin-top: 5%;
     text-align: left;
+  }
+
+  .contact-container .contact-info {
+    font-size: 1.2rem;
+  }
+
+  .header-text {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .wrapper {
+    max-width: 780px;
+    grid-template-columns: 2vw 1fr 1fr 1fr;
+  }
+  
+  .self-image {
+    left: 25%;
+    top: 0;
+    height: 400px;
+  }
+  
+  .self-image svg {
+    transform: scale(0.5);
+  }
+
+  .bar {
+    width: 40px;
+  }
+
+  .skills-legend {
+    width: 68%;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .motto {
+    font-size: 1rem;
   }
 }
